@@ -11,7 +11,7 @@ nb_user = 10
 users = []
 
 nb_user.times do |x|
-    user = User.create(
+    user = User.create!(
 			email: "pcb973@yopmail.com",
 			encrypted_password: "password",
 			description "je suis un utilisateur test",
