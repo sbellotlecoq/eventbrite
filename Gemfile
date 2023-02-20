@@ -70,3 +70,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "table_print", "~> 1.5"
+gem 'dotenv-rails'

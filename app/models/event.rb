@@ -5,5 +5,5 @@ class Event < ApplicationRecord
     validates :duration, presence: true
     validates :title, presence: true, length: { in: 5..140 }
     validates :description, presence: true, length: { in: 20..1000 }
-    validates :price, presence: true,
+    validates :price, presence: true
 end
