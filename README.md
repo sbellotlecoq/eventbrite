@@ -1,24 +1,11 @@
-# README
+readme mark down
+ #voici mon  readme sur le Eventbrite, sacré exercice 
+DB PostgreSQL
+RAils 7
+Devise Alpha : 4.9.0
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ ## lien Heroku https://eventbritethpsamsam.herokuapp.com/
 
-Things you may want to cover:
+ ## pour reset l'utilisateur créé : https://eventbritethpsamsam.herokuapp.com/users/edit
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
