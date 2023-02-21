@@ -27,6 +27,10 @@ Rails.application.configure do
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
 
+  # CE QUE JAI RAJOUTE VENANT DU DASHBOARD
+
+  config.action_mailer.default_url_options = { :host => 'eventbritethpsamsam.herokuapp.com' }
+
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
