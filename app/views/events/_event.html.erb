@@ -1,28 +1,21 @@
-<div id="<%= dom_id event %>">
-  
-  <p>
-    <strong>Duration:</strong>
-    <%= event.duration %>
-  </p>
 
 
-
-  <p>
-    <strong>Location:</strong>
-    <%= event.location %>
-  </p>
-
-</div>
-
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title"><%= event.title %></h5>
-    <h6 class="card-subtitle mb-2 text-muted"><%= event.start_date %></h6>
-    <p class="card-text"><%= event.description %></p>
-    <p class="card-text"><%= event.price %></p>
-    <%= link_to "New event", new_event_path(event)%> </a>
-    <%= link_to "Voir cet event", event_path(event)%> </a>
-  </div>
+<div class="row justify-content-around">
+      <div class="d-flex justify-content-center col-md-3 col-sm-6 my-4">
+      <div class="shadow-lg px-2 py-2" style="width: 18rem;">
+      <h2><%= event.title %></h2>
+        <% date = event.start_date %>
+        <p class="my-3"><strong>Date</strong>: <%= date.strftime("%d-%m-%Y") %></p>
+        <p class=""><strong>Description</strong>: <%= event.description %></p>
+        <p class=""><strong>Lieu</strong>: <%= event.location %></p>
+        <p class=""><strong>Prix</strong>: <%= event.price %> €</p>
+        <p class=""><strong>Duration</strong>: <%= event.duration %> minutes</p>
+        <div class="text-center">
+        <%= link_to "Voir cet event", event_path(event)%>
+        <%= link_to "New event", new_event_path %>
+        </div>
+      </div>
+    </div>
 </div>
 
 

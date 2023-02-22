@@ -80,3 +80,4 @@ gem "faker", "~> 3.1"
 
 gem 'devise', github: 'heartcombo/devise', branch: 'main'
 gem 'simple_form',  '~> 5.2'
+gem 'stripe'
